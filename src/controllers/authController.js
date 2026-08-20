@@ -53,7 +53,7 @@ export const generateJWT = async (req, res, next) => {
       return res.status(401).json({ message: "unauthorized access" });
     }
     
-    const sessionUser = session.user;
+    const sessionUser = session?.user;
 
     // Fetch fresh user data from DB so role changes reflect immediately
     const userCollection = getUserCollection();
