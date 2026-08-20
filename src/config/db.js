@@ -17,7 +17,7 @@ export const client = new MongoClient(uri, {
 
 // Dynamic DB retrieval helper
 export function getDb() {
-  return client.db('ResellHubDB');
+  return client.db('resellHubDB');
 }
 
 export async function connectDB() {
@@ -26,7 +26,7 @@ export async function connectDB() {
     // Test the connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged deployment. Successfully connected to MongoDB Atlas!");
-    return client.db('ResellHubDB');
+    return client.db('resellHubDB');
   } catch (error) {
     console.error("MongoDB connection error:", error);
     throw error;

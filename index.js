@@ -27,7 +27,7 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
-    const db = client.db('ResellHubDB');
+    const db = client.db('resellHubDB');
     const usersCollection = db.collection('users');
     const productsCollection = db.collection('products');
 

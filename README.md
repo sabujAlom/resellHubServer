@@ -32,7 +32,7 @@ ReSell Hub is an online second-hand marketplace platform. This directory contain
 Create a `.env` file in the root of the server folder:
 ```env
 PORT=5000
-DATABASE_URL=mongodb://127.0.0.1:27017/ResellHubDB
+DATABASE_URL=mongodb://127.0.0.1:27017/resellHubDB
 BETTER_AUTH_SECRET=your_better_auth_session_secret_32_chars
 BETTER_AUTH_URL=http://localhost:5000
 STRIPE_SECRET_KEY=sk_test_...
