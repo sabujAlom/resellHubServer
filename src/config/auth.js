@@ -33,6 +33,15 @@ export const auth = betterAuth({
   //   secure: true, // Required for sameSite: "none" in production (HTTPS)
   //   sameSite: "none"
   // },
+  advanced: {
+        defaultCookieAttributes: {
+            sameSite: 'none',
+            secure: true,
+        },
+    },
+    account: {
+        skipStateCookieCheck: true,
+    },
   user: {
     additionalFields: {
       role: {
