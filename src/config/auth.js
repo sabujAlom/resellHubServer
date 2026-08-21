@@ -25,14 +25,14 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "placeholder"
     }
   },
-  advanced: {
-    useSecureCookies: true,
-    disableCookieCache: true // Bypasses browser cache validations during cross-domain authentication
-  },
-  cookie: {
-    secure: true, // Required for sameSite: "none" in production (HTTPS)
-    sameSite: "none"
-  },
+  // advanced: {
+  //   useSecureCookies: true,
+  //   disableCookieCache: true // Bypasses browser cache validations during cross-domain authentication
+  // },
+  // cookie: {
+  //   secure: true, // Required for sameSite: "none" in production (HTTPS)
+  //   sameSite: "none"
+  // },
   user: {
     additionalFields: {
       role: {
