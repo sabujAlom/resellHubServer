@@ -25,10 +25,10 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "placeholder"
     }
   },
-  advanced: {
-    useSecureCookies: true,
-    disableCookieCache: true // Bypasses browser cache validations during cross-domain authentication
-  },
+  // advanced: {
+  //   useSecureCookies: true,
+  //   disableCookieCache: true // Bypasses browser cache validations during cross-domain authentication
+  // },
   // cookie: {
   //   secure: true, // Required for sameSite: "none" in production (HTTPS)
   //   sameSite: "none"
@@ -80,7 +80,7 @@ export const auth = betterAuth({
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://resell-hub-client-three.vercel.app",
+    "http://",
     process.env.CLIENT_URL
   ].filter(Boolean)
 });
