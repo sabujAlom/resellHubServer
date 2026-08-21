@@ -80,6 +80,7 @@ export const auth = betterAuth({
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://resell-hub-client-three.vercel.app",
     process.env.CLIENT_URL
   ].filter(Boolean)
 });
