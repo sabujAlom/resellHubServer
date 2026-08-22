@@ -208,9 +208,7 @@ app.get('/api/db-seed', async (req, res, next) => {
   }
 });
 
-app.get('/', (req, res) => {
-  res.send('ReSell Hub Server is running..');
-});
+
 
 // Fallback Error Handler
 app.use(errorHandler);
